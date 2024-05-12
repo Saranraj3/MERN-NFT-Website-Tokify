@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import logo from '../../Assets/png/token.png'
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
@@ -29,7 +30,7 @@ function Navbar() {
                     <li className='hover:text-gray-500 cursor-pointer'>Contact</li>
                     <li className='hover:text-gray-500 cursor-pointer'>Services</li>
                     <li className='hover:text-gray-500 cursor-pointer'>About</li>
-                    <button className='bg-blue-500 cursor-pointer hover:bg-blue-900 h-[2rem] w-[5rem] rounded-md '>Login</button>
+                    <Link to='/login'><button className='bg-blue-500 cursor-pointer hover:bg-blue-900 h-[2rem] w-[5rem] rounded-md '>Login</button></Link>
                 </ul>
             </div>
         </div>
