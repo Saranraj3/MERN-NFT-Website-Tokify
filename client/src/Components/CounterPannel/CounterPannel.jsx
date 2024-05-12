@@ -7,11 +7,11 @@ function CounterPannel() {
     const [conter, setCounter] = useState(false);
 
     return (
-        <div className='xl:mt-[3rem] text-white overflow-x-hidden overflow-y-hidden'>
+        <div className='sm:mt-[3rem] md:mt-[5rem] xl:mt-[3rem] text-white overflow-x-hidden overflow-y-hidden'>
             <h1 className='text-2xl font-bold text-center'>SERVICE DATA</h1>
             <ScrollTrigger onEnter={() => setCounter(true)} onExit={() => setCounter(false)}>
-                <div className='mt-[2rem] grid grid-cols-4 text-center overflow-x-hidden justify-center'>
-                    <div>
+                <div className='sm:mt-[2rem] sm:grid-cols-1 md:grid-cols-4 md:mt-[1rem] md:m-5 xl:mt-[2rem] grid text-center overflow-x-hidden justify-center'>
+                    <div className='sm:mt-[2rem]'>
                         <h2 className='text-5xl font-extrabold'>
                             {
                                 conter &&
@@ -20,7 +20,7 @@ function CounterPannel() {
                         </h2>
                         <p className='text-xl font-semibold'>Users</p>
                     </div>
-                    <div>
+                    <div className='sm:mt-[2rem]'>
                         <h2 className='text-5xl font-extrabold'>
                             {
                                 conter &&
@@ -29,7 +29,7 @@ function CounterPannel() {
                         </h2>
                         <p className='text-xl font-semibold'>Sold</p>
                     </div>
-                    <div>
+                    <div className='sm:mt-[2rem]'>
                         <h2 className='text-5xl font-extrabold'>
                             {
                                 conter &&
@@ -38,7 +38,7 @@ function CounterPannel() {
                         </h2>
                         <p className='text-xl font-semibold'>Products</p>
                     </div>
-                    <div>
+                    <div className='sm:mt-[2rem]'>
                         <h2 className='text-5xl font-extrabold'>
                             {
                                 conter &&
