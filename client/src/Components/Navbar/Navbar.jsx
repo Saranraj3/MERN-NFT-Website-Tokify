@@ -11,7 +11,7 @@ function Navbar() {
     }
 
     return (
-        <div className='text-white sticky top-0 z-10'>
+        <div className='text-white sticky top-0 z-10 overflow-x-hidden'>
             <img className='mt-3 ml-5 cursor-pointer' src={logo} alt="" />
             <div>
                 <div onClick={HandleNav} className='mt-[-2rem] mr-[1rem] flex justify-end'>

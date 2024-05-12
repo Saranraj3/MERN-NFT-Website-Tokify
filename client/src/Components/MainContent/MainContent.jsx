@@ -4,7 +4,7 @@ import NFTTOKEN from '../../Assets/png/Non-Fungible-Tokens.png';
 
 function MainContent() {
     return (
-        <div className='text-white'>
+        <div className='text-white overflow-x-hidden'>
             <h1 className='sm:mt-[2rem] md:mt-[4rem] text-2xl text-center font-bold'>What Is NFT </h1>
             <div>
                 <p className='sm:m-5 sm:mt-[1rem] sm:max-w-[39rem] md:mt-[5rem] md:max-w-[25rem] lg:max-w-[37rem] xl:ml-[5rem]'>A non-fungible token is a unique digital identifier that is recorded on a blockchain and is used to certify ownership and authenticity. It cannot be copied, substituted, or subdivided. The ownership of an NFT is recorded in the blockchain and can be transferred by the owner, allowing NFTs to be sold and traded.</p>
