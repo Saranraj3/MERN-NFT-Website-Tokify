@@ -6,13 +6,12 @@ import { IoMdClose } from "react-icons/io";
 function Navbar() {
 
     const [nav, setNav] = useState(true);
-
     const HandleNav = () => {
         setNav(!nav)
     }
 
     return (
-        <div className='text-white'>
+        <div className='text-white sticky top-0 z-10'>
             <img className='mt-3 ml-5 cursor-pointer' src={logo} alt="" />
             <div>
                 <div onClick={HandleNav} className='mt-[-2rem] mr-[1rem] flex justify-end'>
