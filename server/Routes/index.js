@@ -7,4 +7,4 @@ router.post('/login', UserLoginController);
 router.post('/signup', UserSignupController);
 
 
-export default router;
+module.exports = router;
