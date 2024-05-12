@@ -22,14 +22,12 @@ function Navbar() {
                     <ul className='sm:visible sm:mt-[1rem] sm:ml-[1rem] sm:text-lg lg:invisible font-bold '>
                         <li className='sm:mt-[1rem] hover:text-gray-500 cursor-pointer'>Contact</li>
                         <li className='sm:mt-[1rem] hover:text-gray-500 cursor-pointer'>Services</li>
-                        <li className='sm:mt-[1rem] hover:text-gray-500 cursor-pointer'>About</li>
                         <button className='sm:mt-[1rem] sm:ml-[-0.5rem] bg-blue-500 cursor-pointer hover:bg-blue-900 h-[2rem] w-[5rem] rounded-md '>Login</button>
                     </ul>
                 </div>
                 <ul className='sm:invisible lg:visible mt-[-1.5rem] mr-[3rem] font-bold flex justify-end gap-[3rem] '>
                     <li className='hover:text-gray-500 cursor-pointer'>Contact</li>
                     <li className='hover:text-gray-500 cursor-pointer'>Services</li>
-                    <li className='hover:text-gray-500 cursor-pointer'>About</li>
                     <Link to='/login'><button className='bg-blue-500 cursor-pointer hover:bg-blue-900 h-[2rem] w-[5rem] rounded-md '>Login</button></Link>
                 </ul>
             </div>
