@@ -1,24 +1,21 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
 const router = require('./Routes');
+const { mongoose } = require('mongoose');
+const { PORT } = process.env
 require('dotenv').config()
-const { MONGODB_URL, PORT } = process.env
 const app = express();
 
 
 // MongoDB Database Connection
-
-mongoose.connect(MONGODB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
-    .then(() => { console.log('Database Connected') })
+mongoose.connect(process.env.MONGODB_URL)
+    .then(() => {
+        console.log('Database Connected')
+        app.listen(process.env.PORT, () => {
+            console.log(`Server Working Port Number ${PORT}`)
+        })
+    })
     .catch((err) => { console.log(err) })
-
-app.listen(PORT, () => {
-    console.log(`Server Working Port Number ${PORT}`)
-})
 
 // Middlewares
 
@@ -28,4 +25,5 @@ app.use(cors({
     methods: 'GET,POST,PUT,DELETE',
     credentials: true
 }));
+
 app.use('/auth', router);
