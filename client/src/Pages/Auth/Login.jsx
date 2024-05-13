@@ -46,15 +46,15 @@ function Login() {
         <div className='text-white'>
             <h1 className='mt-[5rem] text-center cursor-pointer text-2xl'>Login</h1>
             <div className='mt-[2rem] text-white flex justify-center'>
-                <form onSubmit={HandleOnSubmit}>
+                <form onSubmit={HandleOnSubmit} className='text-black'>
                     <div>
                         <input className='pl-2 h-[2.5rem] w-[18rem] cursor-default border' type="password" placeholder='Password' name='password' value={data.password} onChange={HandleOnChange} />
                     </div>
                     <div className='mt-4'>
                         <input className='pl-2 h-[2.5rem] w-[18rem] cursor-default border' type="email" placeholder='Email' name='email' value={data.email} onChange={HandleOnChange} />
                     </div>
-                    <button className='mt-4 h-[2.5rem] w-[18rem] text-lg cursor-pointer hover:bg-green-600 bg-green-500'>Submit</button>
-                    <p className='mt-3 cursor-pointer'>You Don't Haven Account Then <Link to='/signup' className='text-red-500 cursor-pointer'>Signup</Link></p>
+                    <button className='text-white mt-4 h-[2.5rem] w-[18rem] text-lg cursor-pointer hover:bg-green-600 bg-green-500'>Submit</button>
+                    <p className='text-white mt-3 cursor-pointer'>You Don't Haven Account Then <Link to='/signup' className='ml-2 text-red-500 cursor-pointer'>Signup</Link></p>
                 </form>
             </div>
         </div>

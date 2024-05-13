@@ -16,7 +16,7 @@ function Navbar() {
             <img className='mt-3 ml-5 cursor-pointer' src={logo} alt="" />
             <div>
                 <div onClick={HandleNav} className='mt-[-2rem] mr-[1rem] flex justify-end'>
-                    {!nav ? <IoMdClose className='sm:visible lg:invisible size-[2rem] ' /> : <IoMenu className='sm:visible lg:invisible size-[2rem] ' />}
+                    {!nav ? <IoMdClose className='sm:visible lg:invisible size-[2rem] ' /> : <IoMenu className='sm:visible sm:mr-[1rem] lg:invisible size-[2rem] ' />}
                 </div>
                 <div className={!nav ? 'text-white fixed sm:left-0 sm:top-0 sm:w-[60%] sm:h-[15rem] sm:border-r border-r-gray-800 ease-in-out duration-200 sm:visible lg:invisible' : 'fixed left-[-100%]'}>
                     <ul className='sm:visible sm:mt-[1rem] sm:ml-[1rem] sm:text-lg lg:invisible font-bold '>
